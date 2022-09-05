@@ -8,7 +8,7 @@ This is a document that provides a quick rundown of what NLP is and my personal 
 
 This assignment was a basic **text processing** assignment that was about formatting employee information. This assignment used **Python** as the programming language and utilized sysargs, various string functions (split(), capitalize(), strip(), etc), regular expression, the dictionary data structure, a class, and pickle files. 
 
-The program written for this assignment ([program](Homework1_jao180007.py)) reads an input file [data.csv](data.csv), processes the text to standardize it, creates an object for each person with corrections from the user, and outputs each person's information.
+The program written for this assignment ([program](Homework1/Homework1_jao180007.py)) reads an input file [data.csv](Homework1/data/data.csv), processes the text to standardize it, creates an object for each person with corrections from the user, and outputs each person's information.
 
 The user will need to set a system argument as the pathname of the data file, should be "data/data.csv", which the progam confirms. After which the user will be prompted to correct any errors in the information from the input file by typing in new information into the terminal. After all of the information matches the specified format the program prints a list of all the corrected employee information. 
 
