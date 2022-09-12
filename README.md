@@ -28,3 +28,6 @@ The strengths and weaknesses of Python in terms of text processing generally ali
 ### What I Learned from this Assignment
 
 I did not have much experience working in Python so much of what was done in this assignment was my first time doing it. It was an excellent step into development with pyhton and the common structures and functions we'll be using in the NLP course. To pinpoint one thing specifically I learned was how to use regular expression again, which was something I had not even thought about since high school.
+
+## NLTK Exploration
+This [notebook](NLTK-Exploration.pdf) is a brief exploration into some of the common methods and topics used in the nltk tool kit that we'll be using in this NLP course (CS 4395).
