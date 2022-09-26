@@ -55,3 +55,6 @@ the NLTK stopword list, and have length > 5
 7. guessing for a word ends if the user guesses the word or has a negative score
 8. keep a cumulative total score and end the game if it is negative (or the user entered ‘!’) for a guess
 9. right or wrong, give user feedback on their score for this word after each guess
+
+## WordNet Overview
+This [document](WordNet-Overview) provides a rundown on the organizational hierarchy WordNet and its implementation through nltk with various examples and explanations on the functions and algorithms related to WordNet.
