@@ -83,6 +83,7 @@ def guess_game(words):
         score = 5
         guess = ''
         seed(1014)
+        print("=======================================")
         print("W E L C O M E  T O  W O R D  G U E S S")
         while score >= 0 and guess != '!':
             word_num = randint(1,50)
@@ -128,6 +129,7 @@ def guess_game(words):
                     guessed.add(guess)
                 elif not guess.isalpha():
                     print(guess, "is not a letter, guess again")
+                    score -= 1;
                     print(current, "| score:", score)
                 elif guess in guessed:
                     print("alredy guessed: ", guess, "guess again")
@@ -171,7 +173,6 @@ if(len(sys.argv) > 1): #check system arguments
     noun_count = {}
     for n in nouns:
         noun_count[n] = pro_tokens.count(n)
-    print(len(noun_count))
 
     #sort the dictionary by word count
     sorted = sorted(noun_count, key=lambda k: (noun_count[k]), reverse=True)
@@ -180,7 +181,7 @@ if(len(sys.argv) > 1): #check system arguments
     iter = 1;
     common_words = []
     for n in sorted:
-        print(iter, "-", n, "with count of", noun_count[n])
+        print(iter, "-", n, "| count:", noun_count[n])
         common_words.append(n)
         iter += 1
         if iter > 50:
