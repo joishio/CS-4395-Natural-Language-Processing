@@ -57,4 +57,4 @@ the NLTK stopword list, and have length > 5
 9. right or wrong, give user feedback on their score for this word after each guess
 
 ## WordNet Overview
-This [document](WordNet-Overview) provides a rundown on the organizational hierarchy WordNet and its implementation through nltk with various examples and explanations on the functions and algorithms related to WordNet.
+This [document](WordNet-Overview.pdf) provides a rundown on the organizational hierarchy WordNet and its implementation through nltk with various examples and explanations on the functions and algorithms related to WordNet.
