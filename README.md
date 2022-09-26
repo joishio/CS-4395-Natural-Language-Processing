@@ -32,10 +32,10 @@ I did not have much experience working in Python so much of what was done in thi
 ## NLTK Exploration
 This [notebook](NLTK-Exploration.pdf) is a brief exploration into some of the common methods and topics used in the nltk tool kit that we'll be using in this NLP course (CS 4395).
 
-##Lemmatized Noun Guessing Game
+## Lemmatized Noun Guessing Game
 Using some [raw text](Guessing-Game/anat19.txt) a word guessing game akin to hangman or jeopardy was created. The raw text was converted to tokens, lemmatized, and had a part of speech (POS) tagger applied to it in order to classify the 50 most common nouns in the body of text. Which is then used in the [guessing game](Guessing-Game/Guessing_Game.py) as the list of possible words. 
 
-###Pre-processing Steps:
+### Pre-processing Steps:
 
 1. tokenize the lower-case raw text, reduce the tokens to only those that are alpha, not in
 the NLTK stopword list, and have length > 5
@@ -45,7 +45,7 @@ the NLTK stopword list, and have length > 5
 5. print the number of tokens (from step 1) and the number of nouns (step 4) 
 6. return tokens (not unique tokens) from step a, and nouns from the function
 
-###Game Functions:
+### Game Functions:
 1. give the user 5 points to start with; the game ends when their total score is negative, orthey guess ‘!’ as a letter
 2.  randomly choose one of the 50 words in the top 50 list (See the random numbers notebook in the Xtras folder of the GitHub)
 3. output to console an “underscore space” for each letter in the word d. ask the user for a letter
