@@ -58,3 +58,8 @@ the NLTK stopword list, and have length > 5
 
 ## WordNet Overview
 This [document](WordNet-Overview.pdf) provides a rundown on the organizational hierarchy WordNet and its implementation through nltk with various examples and explanations on the functions and algorithms related to WordNet.
+
+## N-grams Language Modeling
+N-grams are an interesting part of NLP that allows for the creation of a language model by taking the probabilities of words appearing in sequence and comparing those n length sequences to a body of text. Read more about n-grams [here](n-grams/N-grams.pdf) in an short overview of their uses and definition. 
+
+Working with n-grams to build a language model can be a very time consuming operation so for this language modeling project it was split into two parts: [part one](n-grams/program-1.py) which sets up our test data and creates the dictionaries of unigrams and bigrams to their count in the text and then pickles them, and [part two](n-grams/program-2.py) which does the language model calculations and compares the results to the correct solution. When looking at part two the use of Laplace smoothing was implemented but still led to some zeroing out due to too small of values, so the final results reflect that in its bias towards 'english' as the selected language when ties occur (such as a tie for zero between the three languages).
