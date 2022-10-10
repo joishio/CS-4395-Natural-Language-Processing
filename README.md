@@ -63,3 +63,12 @@ This [document](WordNet-Overview.pdf) provides a rundown on the organizational h
 N-grams are an interesting part of NLP that allows for the creation of a language model by taking the probabilities of words appearing in sequence and comparing those n length sequences to a body of text. Read more about n-grams [here](n-grams/N-grams.pdf) in an short overview of their uses and definition. 
 
 Working with n-grams to build a language model can be a very time consuming operation so for this language modeling project it was split into two parts: [part one](n-grams/program-1.py) which sets up our test data and creates the dictionaries of unigrams and bigrams to their count in the text and then pickles them, and [part two](n-grams/program-2.py) which does the language model calculations and compares the results to the correct solution. When looking at part two the use of Laplace smoothing was implemented but still led to some zeroing out due to too small of values, so the final results reflect that in its bias towards 'english' as the selected language when ties occur (such as a tie for zero between the three languages).
+
+## Web Crawler
+This [project](Web Crawler/webcrawler.py) is a web crawler that uses the key term 'Pie' in a google search to grab 15 relevant urls and then scrape the text from those pages. The text was cleaned and used to build a knowledge base built on terms ordered by their frequencies and relevancy that is composed of a few context sentences for each word as described [here](Web Crawler/Web_Crawler_Report.pdf). 
+
+The document above goes in detail about how the words were selected and how the knowledge base is defined, as well as some sample dialog for a chatbot built upon the knowledge base. 
+
+### Insructions to Run Code
+
+The [file](Web Crawler/webcrawler.py) needs to be nested in a folder called 'Web Crawler' which has two folders, 'htmldata' and 'sentdata' (used for storing file data) nested in it as well. 'Web Crawler' is the main folder with the two data folders and 'webcrawler.py' at the same level.
