@@ -41,7 +41,7 @@ def output_html(url_list):
         result = filter(visible, data)
         temp_list = list(result)      # list from filter
         temp_str = ' '.join(temp_list)
-        file = open('Web Crawler/htmldata/site'+str(count)+'.txt', 'w+',encoding="utf-8")
+        file = open('Web-Crawler/htmldata/site'+str(count)+'.txt', 'w+',encoding="utf-8")
         file.write(temp_str)
         file.close()
         count+=1
@@ -54,19 +54,19 @@ def visible(element):
     return True      
 
 def clean_file(file_path):
-     with open('Web Crawler/htmldata/'+file_path, 'r',encoding="utf-8") as file:
+     with open('Web-Crawler/htmldata/'+file_path, 'r',encoding="utf-8") as file:
         file_text = ' '.join(file.read().split())
         file_text = re.sub(r'[^A-Za-z0-9.,!?\'\"-()]+', ' ', file_text)
         tokens = sent_tokenize(file_text)
-        with open('Web Crawler/sentdata/'+file_path, 'w+') as file:
+        with open('Web-Crawler/sentdata/'+file_path, 'w+') as file:
             for sentence in tokens:
                 file.write(sentence + "\n")
 
 def get_important_terms():
     stop_words = stopwords.words('english')
     all_words = []
-    for filename in os.listdir('Web Crawler/sentdata/'):
-        f = os.path.join('Web Crawler/sentdata/', filename)
+    for filename in os.listdir('Web-Crawler/sentdata/'):
+        f = os.path.join('Web-Crawler/sentdata/', filename)
         # checking if it is a file
         if os.path.isfile(f):
             with open(f,'r',encoding="utf-8") as file:
@@ -173,7 +173,7 @@ word_dict = {
         ]
 }
     
-with open('Web Crawler/knowledge-base.p', 'wb') as file:
+with open('Web-Crawler/knowledge-base.p', 'wb') as file:
     pickle.dump(word_dict, file)
 
 

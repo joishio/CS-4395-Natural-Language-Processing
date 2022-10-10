@@ -1191,9 +1191,6 @@ Generally you can find this specified at /etc/designs/<SITE>/basePage/header/@he
  
  
  
-         Yesterday
-		 
- 
  
  
           All the Ways to Christmas-ify Your Halloween This Year
