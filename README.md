@@ -74,4 +74,4 @@ The document above goes in detail about how the words were selected and how the 
 The [file](Web-Crawler/webcrawler.py) needs to be nested in a folder called 'Web-Crawler' which has two folders, 'htmldata' and 'sentdata' (used for storing file data) nested in it as well. 'Web Crawler' is the main folder with the two data folders and 'webcrawler.py' at the same level.
 
 ## Syntax Parsing
-Using the sample sentence "Dana loved the taste of French Vanilla ice cream, but the only flavor the shop had was Rocky Road, so she had to buy her least favorite flavor." a Phrase Structure Grammar Parse (PSG) Tree, Dependency Parse, and 
+Using the sample sentence "Dana loved the taste of French Vanilla ice cream, but the only flavor the shop had was Rocky Road, so she had to buy her least favorite flavor." a Phrase Structure Grammar Parse (PSG) Tree, Dependency Parse, and Semantic Role Label Parse (SRL) were generated to highlight the parts of speech, the phrase dependencies, and the verb arguments and modifiers. The rundown and summary can be found [here](Syntax_Parsing_Ice_Cream_Example).
